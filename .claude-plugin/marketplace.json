@@ -1,0 +1,5 @@
+{
+  "name": "tool-history",
+  "owner": { "name": "lush-life" },
+  "plugins": [{ "name": "tool-history", "source": "./" }]
+}

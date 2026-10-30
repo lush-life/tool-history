@@ -1,0 +1,7 @@
+{
+  "name": "tool-history",
+  "version": "0.1.0",
+  "description": "/tool-history lists the skills, MCP tools and subagents the agent used in this session",
+  "license": "MIT",
+  "types": "./types/index.d.ts"
+}
