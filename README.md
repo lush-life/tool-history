@@ -4,7 +4,7 @@ A Claude Code mod that shows which add-on tools the agent actually used in this 
 
 Type `/tool-history` to print the list:
 
-![/tool-history output](docs/example.svg)
+![/tool-history output](docs/tool-history.svg)
 
 - Each row: time, category, name, source (plugin, MCP server, user, project or built-in), duration.
 - Calls a subagent makes are listed under it; the subagent row shows its total time.
