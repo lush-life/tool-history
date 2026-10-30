@@ -41,7 +41,7 @@ test('lists skills, MCP and subagents as the spec shows', async ($, on) => {
 
   await $.session.start({ cwd: '/', surface: 'terminal', isInteractive: true })
   expect((await $.command.run({ command: 'tool-history', args: '' } as never)).text).toBe(
-    '這個 session 還沒有使用 skill、MCP 或 subagent。',
+    'No skills, MCP tools or subagents used in this session yet.',
   )
 
   at(0)
@@ -58,7 +58,7 @@ test('lists skills, MCP and subagents as the spec shows', async ($, on) => {
   const out = await $.command.run({ command: 'tool-history', args: '' } as never)
   expect(out.text).toBe(
     [
-      '這個 session 用過的 skill、MCP 與 subagent：',
+      'Skills, MCP tools and subagents used in this session:',
       '15:28:26  skill     verification-before-completion  superpowers',
       '15:28:34  MCP       query-docs ×2                   context7     3.2s',
       '15:28:43  subagent  Explore                         built-in     7.7s',

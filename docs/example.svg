@@ -2,7 +2,7 @@
 <rect width="660" height="216" rx="8" fill="#1e1e1e"/>
 <text font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" xml:space="preserve">
 <tspan x="20" y="36"><tspan fill="#6c6c6c">❯ /tool-history</tspan></tspan>
-<tspan x="20" y="58"><tspan fill="#d4d4d4">這個 session 用過的 skill、MCP 與 subagent：</tspan></tspan>
+<tspan x="20" y="58"><tspan fill="#d4d4d4">Skills, MCP tools and subagents used in this session:</tspan></tspan>
 <tspan x="20" y="80"><tspan fill="#d4d4d4">15:28:26  </tspan><tspan fill="#b48ead">skill</tspan><tspan fill="#d4d4d4">     verification-before-completion  </tspan><tspan fill="#7a7a7a">superpowers</tspan></tspan>
 <tspan x="20" y="102"><tspan fill="#d4d4d4">15:28:34  </tspan><tspan fill="#5fafa0">MCP</tspan><tspan fill="#d4d4d4">       query-docs ×2                   </tspan><tspan fill="#7a7a7a">context7</tspan><tspan fill="#d4d4d4">     3.2s</tspan></tspan>
 <tspan x="20" y="124"><tspan fill="#d4d4d4">15:28:43  </tspan><tspan fill="#d8a05a">subagent</tspan><tspan fill="#d4d4d4">  Explore                         </tspan><tspan fill="#7a7a7a">built-in</tspan><tspan fill="#d4d4d4">     7.7s</tspan></tspan>

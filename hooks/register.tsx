@@ -5,8 +5,8 @@ import type { ToolHistory, ToolHistoryEntry, ToolHistoryKind } from '../types'
 
 const COMMAND = 'tool-history'
 const LIMIT = 500
-const TITLE = '這個 session 用過的 skill、MCP 與 subagent：'
-const EMPTY = '這個 session 還沒有使用 skill、MCP 或 subagent。'
+const TITLE = 'Skills, MCP tools and subagents used in this session:'
+const EMPTY = 'No skills, MCP tools or subagents used in this session yet.'
 
 const history = atom(
   { plugin: 'tool-history', key: 'history' } as const,
