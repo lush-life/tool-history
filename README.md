@@ -4,18 +4,12 @@ A Claude Code mod that shows which add-on tools the agent actually used in this 
 
 Type `/tool-history` to print the list:
 
-```
-這個 session 用過的 skill、MCP 與 subagent：
-15:28:26  skill     verification-before-completion  superpowers
-15:28:34  MCP       query-docs ×2                   context7     3.2s
-15:28:43  subagent  Explore                         built-in     7.7s
-          ├─ 15:28:46  skill  using-superpowers   superpowers
-          └─ 15:28:48  MCP    resolve-library-id  context7     1.5s
-```
+![/tool-history output](docs/example.svg)
 
 - Each row: time, category, name, source (plugin, MCP server, user, project or built-in), duration.
 - Calls a subagent makes are listed under it; the subagent row shows its total time.
 - Consecutive calls of the same tool merge into one row with `×N` and the summed time; a failed call stays on its own row, marked with a red `✗`.
+- Categories are colored: skill mauve, MCP teal, subagent orange; the source is gray.
 - Skills show no duration. A call still in progress shows `running`.
 - Built-in tools (Bash, Read, Edit, ...) are not recorded.
 - The history lives in memory for the current session only (at most 500 entries) and starts empty after a restart, `/clear` or a resume. Calls made before the mod loaded are not recorded.
